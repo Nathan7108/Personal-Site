@@ -186,7 +186,7 @@ export const Hero = () => {
 
       {/* Scroll indicator */}
       <motion.div 
-        className="absolute left-1/2 transform -translate-x-1/2 lg:bottom-8 bottom-4"
+        className="absolute left-1/2 transform -translate-x-1/2 lg:bottom-8 bottom-2 hidden sm:block"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
