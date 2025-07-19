@@ -19,7 +19,7 @@ export const Hero = () => {
 
   return (
     <section ref={targetRef} className="portfolio-section relative overflow-hidden">
-      {/* Elegant gradient background */}
+      {}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <div 
           className="absolute inset-0"
@@ -33,7 +33,7 @@ export const Hero = () => {
 
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[85vh] lg:min-h-[85vh] min-h-[100vh] pt-4">
-          {/* Left Column - Text Content */}
+          {}
           <motion.div 
             className="space-y-8"
             initial={{ opacity: 0, x: -50 }}
@@ -111,7 +111,7 @@ export const Hero = () => {
               </div>
             </motion.div>
 
-            {/* Social Links */}
+            {}
             <motion.div 
               className="flex gap-2"
               initial={{ opacity: 0, y: 30 }}
@@ -156,7 +156,7 @@ export const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Profile Image */}
+          {}
           <motion.div 
             className="flex justify-center lg:justify-center lg:-translate-y-16 lg:-translate-x-8"
             initial={{ opacity: 0, x: 50 }}
@@ -184,9 +184,9 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {}
       <motion.div 
-        className="absolute left-1/2 transform -translate-x-1/2 lg:bottom-8 bottom-2 hidden sm:block"
+        className="absolute left-1/2 transform -translate-x-1/2 lg:bottom-8 bottom-2 hidden lg:block"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
