@@ -45,7 +45,7 @@ export const About = () => {
             return (
               <div
                 key={skill.title}
-                className="portfolio-card portfolio-glow text-center group cursor-pointer"
+                className="portfolio-card text-center group cursor-pointer"
                 style={{
                   animationDelay: `${index * 0.2}s`,
                   animation: 'fadeInUp 0.8s ease-out both'

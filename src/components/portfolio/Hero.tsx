@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRef } from "react";
@@ -11,11 +11,7 @@ export const Hero = () => {
     offset: ["start end", "end start"],
   });
 
-  const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
-  const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const y3 = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
-  const y4 = useTransform(scrollYProgress, [0, 1], ["0%", "60%"]);
-  const y5 = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
+
 
   return (
     <section ref={targetRef} className="portfolio-section relative overflow-hidden">
@@ -126,6 +122,7 @@ export const Hero = () => {
                       size="icon"
                       className="w-11 h-11 rounded-full hover:bg-primary/10 transition-colors"
                       onClick={() => window.open('https://github.com/nathanluckock', '_blank')}
+                      aria-label="Visit Nathan's GitHub profile"
                     >
                       <Github className="h-6 w-6" />
                     </Button>
@@ -144,6 +141,7 @@ export const Hero = () => {
                       size="icon"
                       className="w-11 h-11 rounded-full hover:bg-primary/10 transition-colors"
                       onClick={() => window.open('https://linkedin.com/in/nathanluckock', '_blank')}
+                      aria-label="Visit Nathan's LinkedIn profile"
                     >
                       <Linkedin className="h-6 w-6" />
                     </Button>
@@ -172,9 +170,9 @@ export const Hero = () => {
                     className="w-full h-full object-cover rounded-2xl"
                   />
                 </div>
-                <div className="card-face card-back flip-card-back rounded-2xl flex items-center justify-center">
+                <div className="card-face card-back rounded-2xl flex items-center justify-center">
                   <div className="text-center space-y-4">
-                    <h3 className="text-2xl font-bold text-gradient">Let's Connect! 🚀</h3>
+                    <h2 className="text-2xl font-bold text-gradient">Let's Connect! 🚀</h2>
                     <p className="text-muted-foreground text-base">Fun fact: I love photography, especially capturing unique landscapes and candid moments.</p>
                   </div>
                 </div>

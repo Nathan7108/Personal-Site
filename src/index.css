@@ -2,29 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Portfolio Design System - Modern Cool Theme */
-
 @layer base {
   :root {
-    --background: 210 40% 98%;    /* Cool Light Blue-Gray #F8FAFC */
-    --foreground: 220 25% 15%;    /* Deep Blue-Gray #1E293B */
+    --background: 210 40% 98%;
+    --foreground: 220 25% 15%;
 
-    --card: 210 35% 96%;          /* Slightly darker cool gray */
+    --card: 210 35% 96%;
     --card-foreground: 220 25% 15%;
 
     --popover: 210 35% 96%;
     --popover-foreground: 220 25% 15%;
 
-    --primary: 220 85% 50%;       /* Modern Blue #3B82F6 */
+    --primary: 220 85% 50%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 25% 15%;     /* Deep Blue-Gray #1E293B */
+    --secondary: 220 25% 15%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 210 25% 92%;
     --muted-foreground: 220 25% 35%;
 
-    --accent: 200 85% 55%;        /* Cool Cyan #06B6D4 */
+    --accent: 200 85% 55%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84% 60%;
@@ -36,28 +34,24 @@
 
     --radius: 0.75rem;
 
-    /* Portfolio specific colors - Modern Cool Theme */
-    --portfolio-primary: 220 85% 50%;            /* Modern Blue #3B82F6 */
-    --portfolio-primary-dark: 220 80% 45%;       /* Darker blue */
-    --portfolio-secondary: 220 25% 15%;          /* Deep Blue-Gray #1E293B */
-    --portfolio-accent: 200 85% 55%;             /* Cool Cyan #06B6D4 */
-    --portfolio-text: 220 25% 15%;              /* Deep Blue-Gray #1E293B */
-    --portfolio-text-muted: 220 25% 35%;        /* Muted blue-gray */
-    --portfolio-background: 210 40% 98%;        /* Cool Light Blue-Gray #F8FAFC */
+    --portfolio-primary: 220 85% 50%;
+    --portfolio-primary-dark: 220 80% 45%;
+    --portfolio-secondary: 220 25% 15%;
+    --portfolio-accent: 200 85% 55%;
+    --portfolio-text: 220 25% 15%;
+    --portfolio-text-muted: 220 25% 35%;
+    --portfolio-background: 210 40% 98%;
 
-    /* Enhanced Gradients - Modern Cool Theme */
     --gradient-primary: linear-gradient(135deg, hsl(var(--portfolio-primary)), hsl(var(--portfolio-primary-dark)));
     --gradient-background: linear-gradient(140deg, hsl(210, 40%, 98%) 0%, hsl(210, 35%, 96%) 20%, hsl(210, 30%, 94%) 40%, hsl(210, 25%, 92%) 60%, hsl(210, 20%, 90%) 80%, hsl(210, 15%, 88%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(210, 35%, 96%), hsl(210, 30%, 94%));
     --gradient-text: linear-gradient(135deg, hsl(var(--portfolio-primary)), hsl(var(--portfolio-text)));
     --gradient-accent: linear-gradient(135deg, hsl(200, 85%, 55%), hsl(200, 80%, 65%));
 
-    /* Enhanced Shadows */
     --shadow-glow: 0 0 40px hsl(var(--portfolio-primary) / 0.08);
     --shadow-card: 0 20px 40px -10px hsl(var(--portfolio-primary) / 0.06);
     --shadow-floating: 0 30px 60px -20px hsl(var(--portfolio-primary) / 0.04);
 
-    /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
@@ -119,7 +113,6 @@
     @apply bg-background text-foreground;
     font-size: 1.00rem;
     background: 
-      /* Enhanced gradient orbs */
       radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.12) 0%, transparent 50%),
       radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
       radial-gradient(circle at 40% 60%, rgba(59, 130, 246, 0.06) 0%, transparent 50%),
@@ -127,13 +120,11 @@
       radial-gradient(circle at 10% 90%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
       radial-gradient(circle at 90% 10%, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
       
-      /* Enhanced geometric patterns */
       linear-gradient(45deg, transparent 30%, rgba(59, 130, 246, 0.03) 50%, transparent 70%),
       linear-gradient(-45deg, transparent 30%, rgba(59, 130, 246, 0.02) 50%, transparent 70%),
       linear-gradient(90deg, transparent 20%, rgba(59, 130, 246, 0.015) 50%, transparent 80%),
       linear-gradient(0deg, transparent 20%, rgba(59, 130, 246, 0.01) 50%, transparent 80%),
       
-      /* Rich multi-layered gradient background */
       linear-gradient(135deg, 
         hsl(210, 40%, 98%) 0%,
         hsl(210, 35%, 96%) 10%,
@@ -148,7 +139,6 @@
         hsl(200, 0%, 78%) 100%
       ),
       
-      /* Additional gradient layers for depth */
       linear-gradient(45deg, 
         transparent 0%,
         rgba(59, 130, 246, 0.02) 25%,
@@ -169,7 +159,6 @@
     position: relative;
   }
 
-  /* Very subtle animated background elements */
   body::before {
     content: '';
     position: fixed;
@@ -205,7 +194,6 @@
 }
 
 @layer components {
-  /* Portfolio specific components */
   .portfolio-section {
     @apply min-h-screen flex items-center justify-center py-12;
     position: relative;
@@ -315,7 +303,6 @@
     transition: var(--transition-bounce);
   }
 
-  /* Enhanced card styles with modern cool theme */
   .perspective-card {
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -356,7 +343,6 @@
     border: 1px solid rgba(59, 130, 246, 0.1);
   }
 
-  /* Flip card specific styles to prevent conflicts */
   .flip-card-back {
     background: linear-gradient(145deg, rgba(248, 250, 252, 0.95), rgba(59, 130, 246, 0.2));
     backdrop-filter: blur(20px) saturate(140%);

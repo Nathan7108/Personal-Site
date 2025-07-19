@@ -13,7 +13,7 @@ export const Employer = () => {
 
         <div className="portfolio-card max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-3 gap-6 items-start">
-            {/* Company Info & Responsibilities */}
+            {}
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
                 <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center">
@@ -43,7 +43,7 @@ export const Employer = () => {
 
             </div>
 
-            {/* Company Description */}
+            {}
             <div className="space-y-4">
               <div>
                 <h4 className="text-xl font-semibold text-foreground mb-4">About Transpara</h4>
@@ -55,7 +55,7 @@ export const Employer = () => {
               </div>
             </div>
 
-            {/* Technologies */}
+            {}
             <div className="space-y-4">
               <div>
                 <h4 className="text-xl font-semibold text-foreground mb-4">Key Technologies</h4>
@@ -80,7 +80,7 @@ export const Employer = () => {
             </div>
           </div>
 
-          {/* What I Do Section - Centered and Full Width */}
+          {}
           <div className="mt-8 text-center">
             <h4 className="text-xl font-semibold text-foreground mb-4">What I Do</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-muted-foreground text-base max-w-4xl mx-auto">
@@ -90,7 +90,7 @@ export const Employer = () => {
               </div>
               <div className="flex items-start space-x-2">
                 <span className="text-primary mt-1">•</span>
-                <span>Integrate with industrial data sources like OPC, MQTT, and ODBC</span>
+                <span>Integrate with industrial data sources like OPC-UA, Inmation, and ODBC</span>
               </div>
               <div className="flex items-start space-x-2">
                 <span className="text-primary mt-1">•</span>
@@ -111,7 +111,7 @@ export const Employer = () => {
             </div>
           </div>
 
-          {/* Visit Transpara Link - Centered */}
+          {}
           <div className="mt-6 text-center">
             <a 
               href="https://transpara.com" 

@@ -16,15 +16,12 @@ export const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // More reliable scroll detection with a smaller threshold
       const scrollPosition = window.scrollY;
       setIsScrolled(scrollPosition > 20);
     };
 
-    // Initial check
     handleScroll();
 
-    // Add passive listener for better performance
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -45,14 +42,13 @@ export const Navigation = () => {
           : ""
       }`}
       style={{
-        // Ensure the navigation is always visible
         willChange: 'transform, opacity, background-color',
-        transform: 'translateZ(0)', // Force hardware acceleration
+        transform: 'translateZ(0)', 
       }}
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {}
           <div 
             className="text-2xl font-bold text-gradient cursor-pointer transition-all duration-300 hover:scale-105"
             onClick={() => scrollToSection("#home")}
@@ -60,13 +56,14 @@ export const Navigation = () => {
             NL
           </div>
 
-          {/* Desktop Navigation */}
+          {}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium text-lg relative group"
+                className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium text-lg relative group focus:outline-none focus:ring-0 focus:border-none focus:shadow-none px-0 py-0 min-w-0 min-h-0"
+                style={{ fontSize: '1.125rem', lineHeight: '1.75rem' }}
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
@@ -74,9 +71,9 @@ export const Navigation = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
+          {}
           <button
-            className="md:hidden text-foreground hover:text-primary transition-colors duration-300"
+            className="md:hidden text-foreground hover:text-primary transition-colors duration-300 focus:outline-none focus:ring-0 focus:border-none focus:shadow-none w-8 h-8"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle mobile menu"
           >
@@ -88,7 +85,7 @@ export const Navigation = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {}
         {isMobileMenuOpen && (
           <div className="md:hidden border-t border-border/20 bg-background/95 backdrop-blur-xl">
             <div className="py-4 space-y-4">
@@ -96,7 +93,8 @@ export const Navigation = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left text-muted-foreground hover:text-primary transition-all duration-300 font-medium py-3 text-lg hover:bg-primary/10 rounded-lg px-4"
+                  className="block w-full text-left text-muted-foreground hover:text-primary transition-all duration-300 font-medium py-3 text-lg hover:bg-primary/10 rounded-lg px-4 focus:outline-none focus:ring-0 focus:border-none focus:shadow-none min-h-0"
+                  style={{ fontSize: '1.125rem', lineHeight: '1.75rem' }}
                 >
                   {item.name}
                 </button>
