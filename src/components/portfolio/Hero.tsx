@@ -32,7 +32,7 @@ export const Hero = () => {
       </div>
 
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[85vh] pt-4">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[85vh] lg:min-h-[85vh] min-h-[100vh] pt-4">
           {/* Left Column - Text Content */}
           <motion.div 
             className="space-y-8"
@@ -163,7 +163,7 @@ export const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="perspective-card w-80 h-80 lg:w-96 lg:h-96">
+            <div className="perspective-card w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
               <div className="card-inner"> 
                 <div className="card-face card-front">
                   <img 
@@ -186,17 +186,17 @@ export const Hero = () => {
 
       {/* Scroll indicator */}
       <motion.div 
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute left-1/2 transform -translate-x-1/2 lg:bottom-8 bottom-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
       >
-        <div className="flex flex-col items-center space-y-3">
-          <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-bounce"></div>
+        <div className="flex flex-col items-center space-y-2 lg:space-y-3">
+          <div className="w-5 h-8 lg:w-6 lg:h-10 border-2 border-primary/50 rounded-full flex justify-center">
+            <div className="w-1 h-2 lg:h-3 bg-primary rounded-full mt-1 lg:mt-2 animate-bounce"></div>
           </div>
           <motion.p 
-            className="text-base text-muted-foreground font-medium tracking-wide"
+            className="text-sm lg:text-base text-muted-foreground font-medium tracking-wide"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2 }}
