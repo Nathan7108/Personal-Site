@@ -172,7 +172,7 @@ export const Hero = () => {
                     className="w-full h-full object-cover rounded-2xl"
                   />
                 </div>
-                <div className="card-face card-back portfolio-card rounded-2xl flex items-center justify-center">
+                <div className="card-face card-back flip-card-back rounded-2xl flex items-center justify-center">
                   <div className="text-center space-y-4">
                     <h3 className="text-2xl font-bold text-gradient">Let's Connect! 🚀</h3>
                     <p className="text-muted-foreground text-base">Fun fact: I love photography, especially capturing unique landscapes and candid moments.</p>

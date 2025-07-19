@@ -136,17 +136,17 @@ export const Projects = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-2xl"
                   />
                   <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <div className="flex gap-4">
-                      <Button 
-                        size="sm" 
-                        variant="outline" 
-                        className="border-white text-white bg-black/20 backdrop-blur-sm"
-                        onClick={() => window.open('#', '_blank')}
-                      >
-                        <Eye className="h-4 w-4 mr-2" />
-                        Personal Project
-                      </Button>
-                    </div>
+                                      <div className="flex gap-4">
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="border-white text-white bg-black/20 backdrop-blur-sm"
+                      onClick={() => window.open('#', '_blank')}
+                    >
+                      <Eye className="h-4 w-4 mr-2" />
+                      Work Project
+                    </Button>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export const Projects = () => {
 
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary border-primary/20 text-base">
+                      <Badge key={tag} variant="secondary" className="bg-primary/15 text-foreground border-primary/25 text-base font-medium">
                         {tag}
                       </Badge>
                     ))}
@@ -175,7 +175,7 @@ export const Projects = () => {
                       onClick={() => window.open('#', '_blank')}
                     >
                       <Eye className="h-4 w-4 mr-2" />
-                      Personal Project
+                      Work Project
                     </Button>
                   </div>
                 </div>
@@ -214,7 +214,7 @@ export const Projects = () => {
 
                   <div className="flex flex-wrap gap-2">
                     {project.tags.slice(0, 3).map((tag) => (
-                      <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary border-primary/20 text-base">
+                      <Badge key={tag} variant="secondary" className="bg-primary/15 text-foreground border-primary/25 text-base font-medium">
                         {tag}
                       </Badge>
                     ))}
@@ -233,7 +233,7 @@ export const Projects = () => {
                       onClick={() => window.open('#', '_blank')}
                     >
                       <Eye className="h-4 w-4 mr-1" />
-                      Personal Project
+                      {(project.id === 7 || project.id === 8 || project.id === 9) ? 'Personal Project' : 'Work Project'}
                     </Button>
                   </div>
                 </div>

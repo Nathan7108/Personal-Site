@@ -64,7 +64,7 @@ export const About = () => {
                   {skill.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full"
+                      className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium"
                     >
                       {tech}
                     </span>

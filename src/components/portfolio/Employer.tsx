@@ -60,21 +60,21 @@ export const Employer = () => {
               <div>
                 <h4 className="text-xl font-semibold text-foreground mb-4">Key Technologies</h4>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">KPI's</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">FastAPI</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">Python</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">C#</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">React</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">Redis</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">MQTT</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">Docker</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">Kubernetes</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">AI Agents</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">ODBC</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">Time-Series Data</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">Data Visualization</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">Alert Systems</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-base rounded-full">GPS Tracking</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">KPI's</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">FastAPI</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">Python</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">C#</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">React</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">Redis</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">MQTT</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">Docker</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">Kubernetes</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">AI Agents</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">ODBC</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">Time-Series Data</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">Data Visualization</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">Alert Systems</span>
+                  <span className="px-3 py-1 bg-primary/15 text-foreground border border-primary/25 text-base rounded-full font-medium">GPS Tracking</span>
                 </div>
               </div>
             </div>
