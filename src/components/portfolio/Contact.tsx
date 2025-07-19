@@ -15,14 +15,14 @@ export const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: "nathan.luckock@gmail.com",
-      link: "mailto:nathan.luckock@gmail.com"
+      details: "nathanluckock@gmail.com",
+      link: "mailto:nathanluckock@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      details: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      details: "+1 (623) 980-9255",
+      link: "tel:+16239809255"
     },
     {
       icon: MapPin,
@@ -114,7 +114,7 @@ export const Contact = () => {
                     type="email"
                     required
                     className="bg-background/50 border-border/50 focus:border-primary"
-                    placeholder="your.email@gmail.com"
+                    placeholder="nathanluckock@gmail.com"
                     disabled={isSubmitting}
                   />
                 </div>
@@ -216,10 +216,14 @@ export const Contact = () => {
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
                 <span className="text-sm">In Development</span>
               </div>
-              <span className="text-sm">•</span>
-              <span className="text-sm">Interactive Demos</span>
-              <span className="text-sm">•</span>
-              <span className="text-sm">Real-time Data</span>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
+                <span className="text-sm">Interactive Demos</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
+                <span className="text-sm">Real-time Data</span>
+              </div>
             </div>
           </div>
         </div>
