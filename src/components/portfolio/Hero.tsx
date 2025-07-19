@@ -172,7 +172,7 @@ export const Hero = () => {
                 </div>
                 <div className="card-face card-back rounded-2xl flex items-center justify-center">
                   <div className="text-center space-y-4">
-                    <h2 className="text-2xl font-bold text-gradient">Let's Connect! 🚀</h2>
+                    <h2 className="text-2xl font-bold text-gradient">Let's Connect!</h2>
                     <p className="text-muted-foreground text-base">Fun fact: I love photography, especially capturing unique landscapes and candid moments.</p>
                   </div>
                 </div>
