@@ -2,117 +2,113 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Portfolio Design System - Sophisticated dark theme with golden accents */
+/* Portfolio Design System - Serene teal-green theme with enhanced gradients */
 
 @layer base {
   :root {
-    --background: 217 19% 8%;
-    --foreground: 43 96% 92%;
+    --background: 180 25% 98%;
+    --foreground: 180 35% 25%;
 
-    --card: 217 25% 10%;
-    --card-foreground: 43 96% 92%;
+    --card: 180 20% 96%;
+    --card-foreground: 180 35% 25%;
 
-    --popover: 217 25% 10%;
-    --popover-foreground: 43 96% 92%;
+    --popover: 180 20% 96%;
+    --popover-foreground: 180 35% 25%;
 
-    --primary: 43 100% 70%;
-    --primary-foreground: 217 19% 8%;
+    --primary: 180 35% 35%;    /* Dark teal-green #426E6F */
+    --primary-foreground: 180 25% 98%;
 
-    --secondary: 217 32% 14%;
-    --secondary-foreground: 43 96% 92%;
+    --secondary: 180 15% 90%;  /* Light teal-blue #DDE9E9 */
+    --secondary-foreground: 180 35% 25%;
 
-    --muted: 217 32% 14%;
-    --muted-foreground: 43 20% 65%;
+    --muted: 180 10% 92%;
+    --muted-foreground: 180 20% 45%;
 
-    --accent: 38 92% 50%;
-    --accent-foreground: 217 19% 8%;
+    --accent: 180 35% 35%;     /* Dark teal-green accent */
+    --accent-foreground: 180 25% 98%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 43 96% 92%;
+    --destructive-foreground: 180 25% 98%;
 
-    --border: 217 32% 17%;
-    --input: 217 32% 17%;
-    --ring: 43 100% 70%;
+    --border: 180 15% 85%;
+    --input: 180 15% 85%;
+    --ring: 180 35% 35%;
 
     --radius: 0.75rem;
 
-    /* Portfolio specific colors */
-    --portfolio-gold: 43 100% 70%;
-    --portfolio-gold-dark: 38 92% 50%;
-    --portfolio-navy: 217 19% 8%;
-    --portfolio-navy-light: 217 25% 10%;
-    --portfolio-navy-lighter: 217 32% 14%;
-    --portfolio-text: 43 96% 92%;
-    --portfolio-text-muted: 43 20% 65%;
+    /* Portfolio specific colors - Enhanced Serene Teal-Green Theme */
+    --portfolio-primary: 180 35% 35%;         /* Dark teal-green #426E6F */
+    --portfolio-primary-dark: 180 35% 25%;    /* Darker teal #346F6F */
+    --portfolio-secondary: 180 15% 90%;       /* Light teal-blue #DDE9E9 */
+    --portfolio-accent: 180 35% 35%;          /* Dark teal-green accent */
+    --portfolio-navy: 180 25% 98%;           /* Pure white #FBFFFF */
+    --portfolio-navy-light: 180 20% 96%;     /* Very light teal */
+    --portfolio-navy-lighter: 180 15% 92%;   /* Even lighter teal */
+    --portfolio-text: 180 35% 25%;           /* Dark teal text */
+    --portfolio-text-muted: 180 20% 45%;     /* Muted teal gray */
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--portfolio-gold)), hsl(var(--portfolio-gold-dark)));
-    --gradient-background: linear-gradient(135deg, hsl(var(--portfolio-navy)), hsl(var(--portfolio-navy-light)));
+    /* Enhanced Gradients - Serene Teal-Green Theme */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--portfolio-primary)), hsl(var(--portfolio-primary-dark)));
+    --gradient-background: linear-gradient(140deg, hsl(180, 25%, 98%) 0%, hsl(180, 20%, 96%) 30%, hsl(180, 15%, 94%) 70%, hsl(180, 10%, 92%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--portfolio-navy-light)), hsl(var(--portfolio-navy-lighter)));
-    --gradient-text: linear-gradient(135deg, hsl(var(--portfolio-gold)), hsl(var(--portfolio-text)));
+    --gradient-text: linear-gradient(135deg, hsl(var(--portfolio-primary)), hsl(var(--portfolio-text)));
+    --gradient-accent: linear-gradient(135deg, hsl(180, 35%, 35%), hsl(180, 25%, 55%));
 
-    /* Shadows */
-    --shadow-glow: 0 0 40px hsl(var(--portfolio-gold) / 0.3);
-    --shadow-card: 0 20px 40px -10px hsl(var(--portfolio-navy) / 0.8);
-    --shadow-floating: 0 30px 60px -20px hsl(var(--portfolio-gold) / 0.2);
+    /* Enhanced Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--portfolio-primary) / 0.12);
+    --shadow-card: 0 20px 40px -10px hsl(var(--portfolio-primary) / 0.1);
+    --shadow-floating: 0 30px 60px -20px hsl(var(--portfolio-primary) / 0.08);
 
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 180 20% 96%;
+    --sidebar-foreground: 180 35% 25%;
+    --sidebar-primary: 180 25% 98%;
+    --sidebar-primary-foreground: 180 35% 25%;
+    --sidebar-accent: 180 35% 35%;
+    --sidebar-accent-foreground: 180 25% 98%;
+    --sidebar-border: 180 15% 85%;
+    --sidebar-ring: 180 35% 35%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 180 25% 8%;
+    --foreground: 180 15% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 180 20% 12%;
+    --card-foreground: 180 15% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 180 20% 12%;
+    --popover-foreground: 180 15% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 180 35% 35%;
+    --primary-foreground: 180 15% 95%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 180 20% 20%;
+    --secondary-foreground: 180 15% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 180 15% 15%;
+    --muted-foreground: 180 10% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 180 35% 35%;
+    --accent-foreground: 180 15% 95%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 180 15% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 180 15% 15%;
+    --input: 180 15% 15%;
+    --ring: 180 35% 35%;
+    --sidebar-background: 180 20% 12%;
+    --sidebar-foreground: 180 15% 95%;
+    --sidebar-primary: 180 25% 8%;
+    --sidebar-primary-foreground: 180 15% 95%;
+    --sidebar-accent: 180 35% 35%;
+    --sidebar-accent-foreground: 180 15% 95%;
+    --sidebar-border: 180 15% 15%;
+    --sidebar-ring: 180 35% 35%;
   }
 }
 
@@ -123,7 +119,15 @@
 
   body {
     @apply bg-background text-foreground;
-    background: var(--gradient-background);
+    font-size: 1.00rem;
+    background: linear-gradient(130deg, 
+      hsl(180, 25%, 98%) 0%,
+      hsl(180, 20%, 96%) 25%,
+      hsl(180, 15%, 94%) 50%,
+      hsl(180, 10%, 92%) 75%,
+      hsl(180, 5%, 90%) 100%
+    );
+    background-attachment: fixed;
     overflow-x: hidden;
   }
 }
@@ -131,19 +135,44 @@
 @layer components {
   /* Portfolio specific components */
   .portfolio-section {
-    @apply min-h-screen flex items-center justify-center py-20;
+    @apply min-h-screen flex items-center justify-center py-12;
+    position: relative;
+    background: transparent;
   }
 
   .portfolio-card {
-    @apply p-8 rounded-2xl backdrop-blur-sm border border-border/20;
-    background: var(--gradient-card);
-    box-shadow: var(--shadow-card);
+    @apply p-8 rounded-2xl;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(221, 233, 233, 0.3));
+    box-shadow: 
+      0 20px 40px rgba(66, 110, 111, 0.1),
+      0 15px 25px -10px rgba(66, 110, 111, 0.08),
+      inset 0 1px 1px rgba(255, 255, 255, 0.9),
+      inset 0 -1px 1px rgba(66, 110, 111, 0.12);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid rgba(66, 110, 111, 0.15);
     transition: var(--transition-smooth);
   }
 
   .portfolio-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-floating);
+    transform: translateY(-8px) scale(1.01);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(66, 110, 111, 0.12));
+    box-shadow: 
+      0 0 0 1px rgba(66, 110, 111, 0.2),
+      0 0 8px rgba(66, 110, 111, 0.25),
+      0 0 16px rgba(66, 110, 111, 0.2),
+      0 0 24px rgba(66, 110, 111, 0.15),
+      0 0 32px rgba(66, 110, 111, 0.1),
+      0 0 40px rgba(66, 110, 111, 0.08),
+      0 0 48px rgba(66, 110, 111, 0.06),
+      0 0 56px rgba(66, 110, 111, 0.04),
+      0 8px 32px rgba(66, 110, 111, 0.15),
+      0 16px 48px rgba(66, 110, 111, 0.1),
+      inset 0 1px 1px rgba(255, 255, 255, 0.98),
+      inset 0 -1px 1px rgba(66, 110, 111, 0.2);
+    border-color: rgba(66, 110, 111, 0.4);
+    backdrop-filter: blur(20px) saturate(170%);
+    -webkit-backdrop-filter: blur(20px) saturate(170%);
   }
 
   .portfolio-glow {
@@ -155,15 +184,16 @@
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    background: var(--gradient-primary);
-    filter: blur(20px);
-    opacity: 0;
+    background: var(--gradient-accent);
+    filter: blur(20px) brightness(1.08) saturate(1.15);
+    opacity: 0.08;
     transition: var(--transition-smooth);
     z-index: -1;
   }
 
   .portfolio-glow:hover::before {
-    opacity: 0.5;
+    opacity: 0.35;
+    filter: blur(20px) brightness(1.2) saturate(1.3);
   }
 
   .floating-animation {
@@ -186,12 +216,18 @@
     transform: rotateY(180deg);
   }
 
+  .card-back {
+    transform: rotateY(180deg);
+    pointer-events: none;
+  }
+
   .card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    will-change: transform;
   }
 
   .card-face {
@@ -200,10 +236,15 @@
     height: 100%;
     backface-visibility: hidden;
     border-radius: inherit;
+    will-change: transform;
   }
 
-  .card-back {
-    transform: rotateY(180deg);
+  .popover {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(221, 233, 233, 0.2));
+    box-shadow: 0 4px 24px 0 rgba(66, 110, 111, 0.12);
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    border: 1px solid rgba(66, 110, 111, 0.15);
   }
 }
 

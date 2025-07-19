@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Eye } from "lucide-react";
+import { Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -6,60 +6,90 @@ export const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "AI-Powered E-commerce Platform",
-      description: "A modern e-commerce solution with AI-driven product recommendations and advanced analytics dashboard.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
-      tags: ["React", "TypeScript", "AI/ML", "Node.js", "PostgreSQL"],
+      title: "ODBC Interface API",
+      description: "Production-grade FastAPI service that connects ODBC-compatible data sources to cloud systems. Features secure lookups, trend data, Redis caching, and MQTT streaming.",
+      image: "media/odbc.png", 
+      tags: ["FastAPI", "Python", "ODBC", "MQTT", "Redis/Valkey"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: false
     },
     {
       id: 2,
-      title: "3D Portfolio Website",
-      description: "An immersive 3D portfolio built with Three.js featuring interactive animations and WebGL effects.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
-      tags: ["Three.js", "WebGL", "React", "GSAP"],
+      title: "Inmation Integration Interface & Extractor ",
+      description: "Backend system that integrates with the an Inmation Base URL, managing subscriptions, WebSocket streams, and dynamic data routing for industrial data platforms. Handles real-time data processing, implements custom authentication protocols, and provides FastAPI endpoints for data access. Features automatic reconnection logic, data validation, and comprehensive error handling for mission-critical industrial applications.",
+      image: "media/inmation.png",
+      tags: ["Python", "FastAPI", "WebSocket", "Inmation", "Automation"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true
     },
     {
       id: 3,
-      title: "Collaborative Design Tool",
-      description: "Real-time collaborative design platform for teams with version control and live editing capabilities.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
-      tags: ["Vue.js", "Socket.io", "Canvas API", "Express"],
+      title: "Crypto Extractor for Demo Data",
+      description: "Microservice that fetches live and historical cryptocurrency data from public APIs and publishes it into internal systems for visualization and trend tracking.",
+      image: "media/crypto.png",
+      tags: ["Python", "Docker", "Time Series Data", "Data Ingestion"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
       id: 4,
-      title: "Mobile Fitness App",
-      description: "Cross-platform fitness tracking app with social features and personalized workout plans.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
-      tags: ["React Native", "Firebase", "Redux", "Python"],
+      title: "API Architecture & Design",
+      description: "Collaborated with the CTO and senior developers to design scalable APIs and align architecture across teams. Created system diagrams in Miro for technical documentation and company-wide clarity. Built FastAPI services with authentication, rate limiting, monitoring, and full test coverage. Documented setup processes for future APIs. Established coding standards, CI/CD pipelines, and deployment strategies for consistent development.",
+      image: "media/api.png",
+      tags: ["API Design", "FastAPI", "Miro", "Documentation"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
+      featured: true
     },
     {
       id: 5,
-      title: "Blockchain DeFi Dashboard",
-      description: "Comprehensive DeFi analytics dashboard with real-time data visualization and portfolio tracking.",
-      image: "https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=800&h=600&fit=crop",
-      tags: ["Web3", "Ethereum", "React", "D3.js"],
+      title: "Date/Time Lookup Interface & Extractor",
+      description: "FastAPI microservice that streams demo data for testing and validation purposes. Ensures systems are functioning correctly by providing consistent live data streams. Implements configurable data generation patterns, supports multiple data formats, and includes built-in data validation. Features real-time streaming endpoints, customizable data frequency controls, and comprehensive logging for debugging and monitoring.",
+      image: "media/time.png",
+      tags: ["FastAPI", "Python", "Testing", "Demo Data"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true
+    },
+    {
+      id: 6,
+      title: "System Monitoring with Netdata",
+      description: "Configured Netdata on cloud and containerized environments to monitor Kubernetes and Docker metrics, feeding key insights into custom dashboards.",
+      image: "media/system.png",
+      tags: ["Netdata", "Docker", "Monitoring", "Kubernetes"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
-      id: 6,
-      title: "AR Interior Design App",
-      description: "Augmented reality app for visualizing furniture and interior design changes in real-time.",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop",
-      tags: ["AR.js", "WebXR", "Three.js", "Mobile"],
+      id: 7,
+      title: "Predictive Modeling with Historical Time-Series Data",
+      description: "An ML model (LSTM/XGBoost) that analyzes historical data to forecast future trends in industrial output, resource demand, or financial metrics. Features dynamic visualizations and real-time predictions for operational decision-making.",
+      image: "media/prediction.png",
+      tags: ["Python", "LSTM", "XGBoost", "Time Series", "ML", "Data Visualization"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false
+    },
+    {
+      id: 8,
+      title: "AI-Powered Script-to-Video Generation Pipeline",
+      description: "A comprehensive pipeline that transforms written scripts into short video content using LLMs, image/video APIs, and voice synthesis. Demonstrates advanced AI coordination across language processing, media generation, and rendering tasks.",
+      image: "media/script.png",
+      tags: ["Python", "LLM", "Video Generation", "Voice Synthesis", "AI Pipeline"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false
+    },
+    {
+      id: 9,
+      title: "Natural Language Agent for Structured Data Analysis",
+      description: "An intelligent AI agent that interprets natural language queries and analyzes uploaded or connected data sources (e.g., CSVs). Leverages LLM technology to provide accurate, human-readable answers and visual insights from real business data.",
+      image: "media/llm.png",
+      tags: ["Python", "LLM", "Data Analysis", "NLP", "Business Intelligence"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
@@ -69,41 +99,52 @@ export const Projects = () => {
   const featuredProjects = projects.filter(p => p.featured);
   const otherProjects = projects.filter(p => !p.featured);
 
+  const ComingSoonOverlay = () => (
+    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 z-10 flex items-center justify-center rounded-lg transition-all duration-300">
+      <div className="text-center bg-black/60 group-hover:bg-black/40 backdrop-blur-sm px-8 py-6 rounded-xl transition-all duration-300 border border-white/20">
+        <div className="text-xl font-bold text-white group-hover:text-white/90 mb-2 transition-all duration-300">Coming Soon</div>
+        <div className="text-white/90 group-hover:text-white/70 text-base transition-all duration-300">Under Construction</div>
+      </div>
+    </div>
+  );
+
   return (
     <section className="portfolio-section" id="projects">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gradient mb-6">Featured Projects</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A showcase of my latest work spanning web development, mobile apps, and emerging technologies.
+          Explore a collection of backend systems and data services I've designed and deployed in real production environments. 
+          Each project shows my focus on scalable design, reliability, and real-world impact
           </p>
         </div>
 
-        {/* Featured Projects */}
         <div className="space-y-20 mb-20">
           {featuredProjects.map((project, index) => (
-            <div 
+            <div
               key={project.id}
               className={`grid lg:grid-cols-2 gap-12 items-center ${
                 index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
               }`}
             >
-              <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                <div className="portfolio-card portfolio-glow group cursor-pointer overflow-hidden h-80">
-                  <img 
-                    src={project.image}
+              <div className="portfolio-glow">
+                <div className="portfolio-card group cursor-pointer overflow-hidden h-80">
+                  <img
+                    src={project.image.replace('public/', '/')}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-2xl"
                   />
                   <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="flex gap-4">
-                      <Button size="sm" className="portfolio-glow">
+                      <Button 
+                        size="sm" 
+                        variant="outline" 
+                        className="border-white text-white bg-black/20 backdrop-blur-sm"
+                        onClick={() => window.open('#', '_blank')}
+                      >
                         <Eye className="h-4 w-4 mr-2" />
-                        Live Demo
-                      </Button>
-                      <Button size="sm" variant="outline" className="border-white text-white">
-                        <Github className="h-4 w-4 mr-2" />
-                        Code
+                        Personal Project
                       </Button>
                     </div>
                   </div>
@@ -121,20 +162,20 @@ export const Projects = () => {
 
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary border-primary/20">
+                      <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary border-primary/20 text-base">
                         {tag}
                       </Badge>
                     ))}
                   </div>
 
                   <div className="flex gap-4">
-                    <Button className="portfolio-glow">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      View Live
-                    </Button>
-                    <Button variant="outline" className="border-primary/30 text-primary hover:bg-primary/10">
-                      <Github className="h-4 w-4 mr-2" />
-                      Source Code
+                    <Button 
+                      variant="outline" 
+                      className="border-primary/50 text-primary hover:bg-primary/10 bg-background/80"
+                      onClick={() => window.open('#', '_blank')}
+                    >
+                      <Eye className="h-4 w-4 mr-2" />
+                      Personal Project
                     </Button>
                   </div>
                 </div>
@@ -143,53 +184,57 @@ export const Projects = () => {
           ))}
         </div>
 
-        {/* Other Projects Grid */}
         <div>
           <h3 className="text-3xl font-bold text-center mb-12 text-foreground">More Projects</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {otherProjects.map((project, index) => (
-              <div 
+              <div
                 key={project.id}
-                className="portfolio-card portfolio-glow group cursor-pointer"
-                style={{ 
+                className="portfolio-card portfolio-glow group cursor-pointer relative"
+                style={{
                   animationDelay: `${index * 0.1}s`,
                   animation: 'fadeInUp 0.8s ease-out both'
                 }}
               >
-                <div className="aspect-video mb-6 overflow-hidden rounded-lg">
-                  <img 
+                <div className="aspect-video mb-6 overflow-hidden rounded-lg relative">
+                  <img
                     src={project.image}
                     alt={project.title}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
+                  {(project.id === 7 || project.id === 8 || project.id === 9) && <ComingSoonOverlay />}
                 </div>
 
                 <div className="space-y-4">
                   <h4 className="text-xl font-bold text-foreground">{project.title}</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-lg leading-relaxed">
                     {project.description}
                   </p>
 
                   <div className="flex flex-wrap gap-2">
                     {project.tags.slice(0, 3).map((tag) => (
-                      <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary border-primary/20 text-xs">
+                      <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary border-primary/20 text-base">
                         {tag}
                       </Badge>
                     ))}
                     {project.tags.length > 3 && (
-                      <Badge variant="secondary" className="bg-muted text-muted-foreground text-xs">
+                      <Badge variant="secondary" className="bg-muted text-muted-foreground text-base">
                         +{project.tags.length - 3}
                       </Badge>
                     )}
                   </div>
 
                   <div className="flex gap-3">
-                    <a href={project.liveUrl} className="text-primary hover:text-primary/80 transition-colors">
-                      <ExternalLink className="h-5 w-5" />
-                    </a>
-                    <a href={project.githubUrl} className="text-muted-foreground hover:text-primary transition-colors">
-                      <Github className="h-5 w-5" />
-                    </a>
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="border-primary/50 text-primary hover:bg-primary/10 bg-background/80 text-sm"
+                      onClick={() => window.open('#', '_blank')}
+                    >
+                      <Eye className="h-4 w-4 mr-1" />
+                      Personal Project
+                    </Button>
                   </div>
                 </div>
               </div>

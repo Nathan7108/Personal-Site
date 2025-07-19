@@ -1,73 +1,97 @@
-# Welcome to your Lovable project
+# Nathan Luckock - Backend Developer Portfolio
 
-## Project info
+A modern, responsive portfolio website showcasing Nathan's backend development skills, projects, and professional experience.
 
-**URL**: https://lovable.dev/projects/0909d1c4-0275-4842-ba15-f13752388e15
+## Features
 
-## How can I edit this code?
+- **Modern Design**: Clean, professional interface with smooth animations
+- **Responsive**: Optimized for all devices and screen sizes
+- **Fast Performance**: Built with React and Vite for optimal loading speeds
+- **Interactive Elements**: Smooth scrolling, hover effects, and dynamic content
+- **Contact Integration**: Working contact form with Formspree integration
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript, Tailwind CSS
+- **UI Components**: Radix UI primitives with custom styling
+- **Animations**: Framer Motion
+- **Build Tool**: Vite
+- **Deployment**: Ready for Vercel, Netlify, or any static hosting
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0909d1c4-0275-4842-ba15-f13752388e15) and start prompting.
+## Project Structure
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/
+│   ├── portfolio/          # Portfolio-specific components
+│   │   ├── About.tsx      # Skills and expertise section
+│   │   ├── Contact.tsx    # Contact form and information
+│   │   ├── Employer.tsx   # Work experience section
+│   │   ├── Hero.tsx       # Landing section
+│   │   ├── Navigation.tsx # Header navigation
+│   │   ├── Portfolio.tsx  # Main portfolio wrapper
+│   │   └── Projects.tsx   # Projects showcase
+│   └── ui/                # Reusable UI components
+├── hooks/                 # Custom React hooks
+├── lib/                   # Utility functions
+└── pages/                 # Page components
 ```
 
-**Edit a file directly in GitHub**
+## Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd pixel-prism-persona-showcase
+   ```
 
-**Use GitHub Codespaces**
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-## What technologies are used for this project?
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-This project is built with:
+## Customization
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Personal Information
+Update the following files with your information:
+- `src/components/portfolio/Hero.tsx` - Name, title, social links
+- `src/components/portfolio/About.tsx` - Skills and expertise
+- `src/components/portfolio/Projects.tsx` - Project details and images
+- `src/components/portfolio/Contact.tsx` - Contact information
+- `src/components/portfolio/Employer.tsx` - Work experience
 
-## How can I deploy this project?
+### Styling
+The project uses Tailwind CSS with custom CSS variables defined in `src/index.css`. The color scheme and styling can be customized by modifying the CSS variables.
 
-Simply open [Lovable](https://lovable.dev/projects/0909d1c4-0275-4842-ba15-f13752388e15) and click on Share -> Publish.
+### Images
+Replace images in the `public/media/` directory with your own:
+- `myself.png` - Profile photo
+- Project images (odbc.png, inmation.png, etc.)
+- `Nathan_Luckock_Resume.pdf` - Resume file
 
-## Can I connect a custom domain to my Lovable project?
+## Deployment
 
-Yes, you can!
+This project can be deployed to any static hosting service:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Vercel**: Connect your GitHub repository
+- **Netlify**: Drag and drop the `dist` folder
+- **GitHub Pages**: Use the `gh-pages` branch
+- **AWS S3**: Upload the `dist` folder
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Contact
+
+For questions or collaboration opportunities, reach out to Nathan at nathan.luckock@gmail.com.
