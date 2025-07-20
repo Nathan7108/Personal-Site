@@ -1,6 +1,8 @@
 import { Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { getOptimizedImageProps } from "@/lib/utils";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 export const Projects = () => {
   const projects = [
@@ -129,11 +131,13 @@ export const Projects = () => {
             >
               <div className="portfolio-glow">
                 <div className="portfolio-card group cursor-pointer overflow-hidden h-80">
-                  <img
+                  <OptimizedImage
                     src={project.image.replace('public/', '/')}
                     alt={project.title}
-                    loading="lazy"
+                    width={554}
+                    height={369}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-2xl"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                       <div className="flex gap-4">
@@ -197,11 +201,13 @@ export const Projects = () => {
                 }}
               >
                 <div className="aspect-video mb-6 overflow-hidden rounded-lg relative">
-                  <img
+                  <OptimizedImage
                     src={project.image}
                     alt={project.title}
-                    loading="lazy"
+                    width={400}
+                    height={225}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
                   />
                   {(project.id === 7 || project.id === 8 || project.id === 9) && <ComingSoonOverlay />}
                 </div>

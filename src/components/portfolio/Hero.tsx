@@ -3,6 +3,8 @@ import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRef } from "react";
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
+import { getOptimizedImageProps } from "@/lib/utils";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 export const Hero = () => {
   const targetRef = useRef<HTMLDivElement>(null);
@@ -164,10 +166,14 @@ export const Hero = () => {
             <div className="perspective-card w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
               <div className="card-inner"> 
                 <div className="card-face card-front">
-                  <img 
+                  <OptimizedImage
                     src="media/myself.png"
                     alt="Nathan Luckock - Professional Portrait"
+                    width={382}
+                    height={382}
                     className="w-full h-full object-cover rounded-2xl"
+                    loading="eager"
+                    priority={true}
                   />
                 </div>
                 <div className="card-face card-back rounded-2xl flex items-center justify-center">
