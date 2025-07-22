@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { getOptimizedImageProps } from "@/lib/utils";
 import { OptimizedImage } from "@/components/ui/optimized-image";
+import { toast } from "@/hooks/use-toast";
 
 export const Projects = () => {
   const projects = [
@@ -130,7 +131,11 @@ export const Projects = () => {
               }`}
             >
               <div className="portfolio-glow mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:flex lg:justify-center">
-                <div className="portfolio-card group cursor-pointer overflow-hidden h-80 w-full lg:max-w-xl">
+                <div 
+                  className="portfolio-card group cursor-pointer overflow-hidden h-80 w-full lg:max-w-xl"
+                  onClick={() => window.open('https://transpara.com', '_blank')}
+                  style={{ cursor: 'pointer' }}
+                >
                   <OptimizedImage
                     src={project.image.replace('public/', '/')}
                     alt={project.title}
@@ -145,7 +150,7 @@ export const Projects = () => {
                       size="sm" 
                       variant="outline" 
                       className="border-white text-white bg-black/20 backdrop-blur-sm"
-                      onClick={() => window.open('#', '_blank')}
+                      onClick={() => window.open('https://transpara.com', '_blank')}
                     >
                       <Eye className="h-4 w-4 mr-2" /> 
                       Work Project
@@ -176,7 +181,7 @@ export const Projects = () => {
                     <Button 
                       variant="outline" 
                       className="border-primary/50 text-primary hover:bg-primary/10 bg-background/80"
-                      onClick={() => window.open('#', '_blank')}
+                      onClick={() => window.open('https://transpara.com', '_blank')}
                     >
                       <Eye className="h-4 w-4 mr-2" />
                       Work Project
@@ -197,8 +202,10 @@ export const Projects = () => {
                 className="portfolio-card portfolio-glow group cursor-pointer relative"
                 style={{
                   animationDelay: `${index * 0.05}s`,
-                  animation: 'fadeInUp 0.4s ease-out both'
+                  animation: 'fadeInUp 0.4s ease-out both',
+                  cursor: (project.id !== 7 && project.id !== 8 && project.id !== 9) ? 'pointer' : (project.id === 7 || project.id === 8 || project.id === 9) ? 'not-allowed' : undefined
                 }}
+                onClick={(project.id !== 7 && project.id !== 8 && project.id !== 9) ? () => window.open('https://transpara.com', '_blank') : () => toast ? toast({ title: 'Demo coming soon', description: 'This personal project demo is under construction.' }) : window.alert('Demo coming soon: This personal project demo is under construction.')}
               >
                 <div className="aspect-video mb-6 overflow-hidden rounded-lg relative">
                   <OptimizedImage
@@ -236,7 +243,7 @@ export const Projects = () => {
                       size="sm" 
                       variant="outline" 
                       className="border-primary/50 text-primary hover:bg-primary/10 bg-background/80 text-sm"
-                      onClick={() => window.open('#', '_blank')}
+                      onClick={(project.id === 7 || project.id === 8 || project.id === 9) ? (e) => { e.stopPropagation(); toast ? toast({ title: 'Demo coming soon', description: 'This personal project demo is under construction.' }) : window.alert('Demo coming soon: This personal project demo is under construction.'); } : (e) => { e.stopPropagation(); window.open('https://transpara.com', '_blank'); }}
                     >
                       <Eye className="h-4 w-4 mr-1" />
                       {(project.id === 7 || project.id === 8 || project.id === 9) ? 'Personal Project' : 'Work Project'}
