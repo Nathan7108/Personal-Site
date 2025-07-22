@@ -129,8 +129,8 @@ export const Projects = () => {
                 index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
               }`}
             >
-              <div className="portfolio-glow">
-                <div className="portfolio-card group cursor-pointer overflow-hidden h-80">
+              <div className="portfolio-glow mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:flex lg:justify-center">
+                <div className="portfolio-card group cursor-pointer overflow-hidden h-80 w-full lg:max-w-xl">
                   <OptimizedImage
                     src={project.image.replace('public/', '/')}
                     alt={project.title}
