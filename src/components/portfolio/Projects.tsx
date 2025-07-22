@@ -205,7 +205,7 @@ export const Projects = () => {
                   animation: 'fadeInUp 0.4s ease-out both',
                   cursor: (project.id !== 7 && project.id !== 8 && project.id !== 9) ? 'pointer' : (project.id === 7 || project.id === 8 || project.id === 9) ? 'not-allowed' : undefined
                 }}
-                onClick={(project.id !== 7 && project.id !== 8 && project.id !== 9) ? () => window.open('https://transpara.com', '_blank') : () => toast ? toast({ title: 'Demo coming soon', description: 'This personal project demo is under construction.' }) : window.alert('Demo coming soon: This personal project demo is under construction.')}
+                onClick={(project.id !== 7 && project.id !== 8 && project.id !== 9) ? () => window.open('https://transpara.com', '_blank') : () => toast ? toast({ title: 'Demo coming soon', description: 'This personal project demo is under construction.', duration: 5000 }) : window.alert('Demo coming soon: This personal project demo is under construction.')}
               >
                 <div className="aspect-video mb-6 overflow-hidden rounded-lg relative">
                   <OptimizedImage
@@ -243,7 +243,7 @@ export const Projects = () => {
                       size="sm" 
                       variant="outline" 
                       className="border-primary/50 text-primary hover:bg-primary/10 bg-background/80 text-sm"
-                      onClick={(project.id === 7 || project.id === 8 || project.id === 9) ? (e) => { e.stopPropagation(); toast ? toast({ title: 'Demo coming soon', description: 'This personal project demo is under construction.' }) : window.alert('Demo coming soon: This personal project demo is under construction.'); } : (e) => { e.stopPropagation(); window.open('https://transpara.com', '_blank'); }}
+                      onClick={(project.id === 7 || project.id === 8 || project.id === 9) ? (e) => { e.stopPropagation(); toast ? toast({ title: 'Demo coming soon', description: 'This personal project demo is under construction.', duration: 5000 }) : window.alert('Demo coming soon: This personal project demo is under construction.'); } : (e) => { e.stopPropagation(); window.open('https://transpara.com', '_blank'); }}
                     >
                       <Eye className="h-4 w-4 mr-1" />
                       {(project.id === 7 || project.id === 8 || project.id === 9) ? 'Personal Project' : 'Work Project'}
