@@ -8,42 +8,31 @@ import { OptimizedImage } from "@/components/ui/optimized-image";
 
 export const Hero = () => {
   const targetRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["start end", "end start"],
-  });
-
-
 
   return (
     <section ref={targetRef} className="portfolio-section relative overflow-hidden">
-      {}
+      {/* Simplified background */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <div 
-          className="absolute inset-0"
-          style={{
-            background: `
-              linear-gradient(135deg, rgba(251, 255, 255, 1) 0%, rgba(221, 233, 233, 0.9) 30%, rgba(66, 110, 111, 0.2) 70%, rgba(52, 111, 111, 0.1) 100%)
-            `
-          }}
+          className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-blue-100/30"
         />
       </div>
 
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[85vh] lg:min-h-[85vh] min-h-[100vh] pt-4">
-          {}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[85vh] pt-4">
+          {/* Left Column */}
           <motion.div 
             className="space-y-8"
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
           >
             <div className="space-y-6">
               <motion.h1 
                 className="text-5xl lg:text-7xl font-bold leading-tight"
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
               >
                 <span className="text-foreground">Hi, I'm </span>
                 <span className="text-gradient">Nathan</span>
@@ -51,9 +40,9 @@ export const Hero = () => {
               
               <motion.p 
                 className="text-xl lg:text-2xl text-muted-foreground leading-relaxed"
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
               >
                 Backend Developer crafting robust APIs and scalable systems
               </motion.p>
@@ -61,9 +50,9 @@ export const Hero = () => {
 
             <motion.div 
               className="space-y-6"
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
             >
               <p className="text-xl text-muted-foreground max-w-lg">
                 I build fast, reliable backend systems that power real-world applications. 
@@ -109,12 +98,12 @@ export const Hero = () => {
               </div>
             </motion.div>
 
-            {}
+            {/* Social Links */}
             <motion.div 
               className="flex gap-2"
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
             >
               <TooltipProvider>
                 <Tooltip>
@@ -156,12 +145,12 @@ export const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {}
+          {/* Right Column - Image */}
           <motion.div 
-            className="flex justify-center lg:justify-center lg:-translate-y-16 lg:-translate-x-8"
-            initial={{ opacity: 0, x: 50 }}
+            className="flex justify-center lg:justify-center"
+            initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
           >
             <div className="perspective-card w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
               <div className="card-inner"> 
@@ -188,12 +177,12 @@ export const Hero = () => {
         </div>
       </div>
 
-      {}
+      {/* Scroll indicator */}
       <motion.div 
         className="absolute left-1/2 transform -translate-x-1/2 lg:bottom-8 bottom-2 hidden lg:block"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
+        transition={{ delay: 0.6 }}
       >
         <div className="flex flex-col items-center space-y-2 lg:space-y-3">
           <div className="w-5 h-8 lg:w-6 lg:h-10 border-2 border-primary/50 rounded-full flex justify-center">
@@ -201,9 +190,9 @@ export const Hero = () => {
           </div>
           <motion.p 
             className="text-sm lg:text-base text-muted-foreground font-medium tracking-wide"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
           >
             Scroll to explore
           </motion.p>

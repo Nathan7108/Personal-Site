@@ -471,7 +471,6 @@
   animation-delay: 800ms;
 }
 
-/* Image optimization for performance */
 img[src*="inmation.png"],
 img[src*="api.png"] {
   image-rendering: -webkit-optimize-contrast;
@@ -489,14 +488,12 @@ img[src*="myself.png"] {
   object-fit: cover;
 }
 
-/* Optimize all project images */
 .portfolio-card img {
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
   object-fit: cover;
 }
 
-/* Additional performance optimizations */
 img {
   will-change: transform;
   backface-visibility: hidden;
@@ -505,24 +502,20 @@ img {
   image-rendering: crisp-edges;
 }
 
-/* Reduce layout shift for images */
 img[width][height] {
   aspect-ratio: attr(width) / attr(height);
 }
 
-/* Optimize picture elements */
 picture {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* Prevent layout shift during image loading */
 .portfolio-card {
   contain: layout style paint;
 }
 
-/* Optimize animations for better performance */
 .group:hover img {
   will-change: transform;
 }

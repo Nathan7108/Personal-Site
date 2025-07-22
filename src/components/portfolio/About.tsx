@@ -47,8 +47,8 @@ export const About = () => {
                 key={skill.title}
                 className="portfolio-card text-center group cursor-pointer"
                 style={{
-                  animationDelay: `${index * 0.2}s`,
-                  animation: 'fadeInUp 0.8s ease-out both'
+                  animationDelay: `${index * 0.1}s`,
+                  animation: 'fadeInUp 0.4s ease-out both'
                 }}
               >
                 <div className="mb-6">

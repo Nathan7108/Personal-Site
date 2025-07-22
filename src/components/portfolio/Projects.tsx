@@ -196,8 +196,8 @@ export const Projects = () => {
                 key={project.id}
                 className="portfolio-card portfolio-glow group cursor-pointer relative"
                 style={{
-                  animationDelay: `${index * 0.1}s`,
-                  animation: 'fadeInUp 0.8s ease-out both'
+                  animationDelay: `${index * 0.05}s`,
+                  animation: 'fadeInUp 0.4s ease-out both'
                 }}
               >
                 <div className="aspect-video mb-6 overflow-hidden rounded-lg relative">
@@ -206,7 +206,7 @@ export const Projects = () => {
                     alt={project.title}
                     width={400}
                     height={225}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                   {(project.id === 7 || project.id === 8 || project.id === 9) && <ComingSoonOverlay />}
