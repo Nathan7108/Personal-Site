@@ -147,7 +147,7 @@ export const Projects = () => {
                       className="border-white text-white bg-black/20 backdrop-blur-sm"
                       onClick={() => window.open('#', '_blank')}
                     >
-                      <Eye className="h-4 w-4 mr-2" />
+                      <Eye className="h-4 w-4 mr-2" /> 
                       Work Project
                     </Button>
                   </div>
